@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shelter</title>
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/pets.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <div class="logo header__logo">
+        <h1 class="logo__title">Cozy House</h1>
+        <p class="logo__subtitle">Shelter for pets in Boston</p>
+      </div>
+      <nav class="header__navigation">
+        <ul class="header__navbar navbar">
+          <li class="navbar__item"><a href="#" class="navbar__link" data-link-main>About the shelter</a></li>
+          <li class="navbar__item"><a class="navbar__link navbar__link_active" href="#">Our pets</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#" data-link-disabled>Help the shelter</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#" data-link-disabled>Contacts</a></li>
+        </ul>
+        <button class="header__btn hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="our-friends">
+      <div class="wrapper our-friends__wrapper">
+        <h3 class="section-title section-title_center our-friends__title">Our friends who<br> are looking for a house</h3>
+        <div class="our-friends__content">
+          <div class="our-friends__column">
+            <div class="our-friends__list">
+              <div class="card">
+                <div class="card__img">
+                  <img src="../assets/images/pets-katrine.png" alt="pet Katrine">
+                </div>
+                <h4 class="card__title">Katrine</h4>
+                <button class="card__btn btn btn_outline">Learn more</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="../assets/images/pets-jennifer.png" alt="pet Jennifer">
+                </div>
+                <h4 class="card__title">Jennifer</h4>
+                <button class="card__btn btn btn_outline">Learn more</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="../assets/images/pets-woody.png" alt="pet Woody">
+                </div>
+                <h4 class="card__title">Woody</h4>
+                <button class="card__btn btn btn_outline">Learn more</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="../assets/images/pets-sophia.png" alt="pet Sophia">
+                </div>
+                <h4 class="card__title">Sophia</h4>
+                <button class="card__btn btn btn_outline">Learn more</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="../assets/images/pets-timmy.png" alt="pet Timmy">
+                </div>
+                <h4 class="card__title">Timmy</h4>
+                <button class="card__btn btn btn_outline">Learn more</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="../assets/images/pets-charly.png" alt="pet Charly">
+                </div>
+                <h4 class="card__title">Charly</h4>
+                <button class="card__btn btn btn_outline">Learn more</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="../assets/images/pets-scarlet.png" alt="pet Scarlett">
+                </div>
+                <h4 class="card__title">Scarlett</h4>
+                <button class="card__btn btn btn_outline">Learn more</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="../assets/images/pets-freddie.png" alt="pet Freddie">
+                </div>
+                <h4 class="card__title">Freddie</h4>
+                <button class="card__btn btn btn_outline">Learn more</button>
+              </div>
+            </div>
+          </div>
+          <div class="our-friends__control">
+            <button class="our-friends__btn arrow arrow_start arrow_disabled" disabled><<</button>
+            <button class="our-friends__btn arrow arrow_prev arrow_disabled" disabled><</button>
+            <button class="our-friends__btn btn btn_outline btn_count btn_active">1</button>
+            <button class="our-friends__btn arrow arrow_next">></button>
+            <button class="our-friends__btn arrow arrow_end">>></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="footer__content">
+        <h3 class="footer__title">For questions and suggestions</h3>
+        <a class="footer__link footer__link_mail" href="mailto:email@shelter.com">email@shelter.com</a>
+        <a class="footer__link footer__link_phone" href="tel:+13 674 567 75 54">+13 674 567 75 54</a>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">We are waiting for your visit</h3>
+        <a class="footer__link footer__link_location" href="https://goo.gl/maps/7uCq16XDgTefN51BA" target="_blank">1 Central Street, Boston (entrance from the store)</a>
+        <a class="footer__link footer__link_location" href="https://goo.gl/maps/QeRN9kqoadEDV15z6" target="_blank">18 South Park, London </a>
+      </div>
+      <img class="footer__img" src="../assets/images/footer-puppy.png" alt="Footer puppy">
+    </div>
+  </footer>
+  <script src="pets.js"></script>
+</body>
+</html>
