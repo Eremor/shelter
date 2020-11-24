@@ -1,0 +1,21 @@
+$page: pets;
+
+
+@import "abstract/variables";
+@import "abstract/mixin";
+
+//Base
+@import "base/base";
+@import "base/buttons";
+@import "base/navigation";
+@import "base/hamburger";
+@import "base/logo";
+@import "base/card";
+
+//Layouts
+@import "layouts/wrapper";
+@import "layouts/header";
+@import "layouts/footer";
+
+//Components
+@import "components/our-friends";

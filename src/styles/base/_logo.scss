@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    @include logo_title;
+    @if $page == main {
+      color: $color-primary;
+    } @else {
+      color: $color-dark-l;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    padding-left: 2px;
+    @include logo_subtitle;
+    text-align: center;
+    @if $page == main {
+      color: $color-light-xl;
+    } @else {
+      color: $color-dark-3xl;
+    }
+  }
+}

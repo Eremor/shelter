@@ -1,0 +1,148 @@
+.footer {
+  background: $start-screen-gradient-background;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+
+    @include media-tablet {
+      padding-top: 14px;
+      justify-content: center;
+    }
+
+    @include media-mobile {
+      padding-top: 11px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include media-tablet {
+      &:first-child {
+        margin-right: 60px;
+      }
+    }
+
+    @include media-mobile {
+      align-items: center;
+
+      &:first-child {
+        margin-right: 0;
+      }
+
+      &:nth-child(2) {
+        margin-top: 28px;
+      }
+    }
+  }
+  
+  &__title {
+    margin: 0;
+    margin-top: 17px;
+    padding: 0;
+    max-width: 280px;
+    @include h3;
+    color: $color-light-xl;
+
+    @include media-mobile {
+      max-width: 270px;
+      @include h3-mobile;
+      letter-spacing: 0.16rem;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    margin: 0;
+    margin-top: 44px;
+    padding: 0;
+    padding-left: 60px;
+    position: relative;
+    @include h4;
+    letter-spacing: 0.12rem;
+    text-decoration: none;
+    color: $color-primary;
+
+    &_mail::after {
+      content: url(./../assets/icons/icon-email.svg);
+      position: absolute;
+      top: -5px;
+      left: 0;
+    }
+
+    &_phone {
+      margin-top: 49px;
+
+      &::after {
+        content: url(./../assets/icons/icon-phone.svg);
+        position: absolute;
+        top: -5px;
+        left: 0;
+      }
+    }
+
+    &_location {
+      padding-left: 41px;
+    }
+
+    &_location::after {
+      content: url(./../assets/icons/icon-marker.svg);
+      position: absolute;
+      top: -5px;
+      left: -1px;
+    }
+
+    &_location:nth-child(2) {
+      margin-top: 33px;
+      max-width: 260px;
+
+      &::after {
+        top: 6px;
+      }
+    }
+
+    &_location:last-child {
+      margin-top: 37px;
+    }
+
+    @include media-mobile {
+      &_mail {
+        margin-top: 46px;
+      }
+
+      &_location {
+        &:nth-child(2) {
+          margin-top: 40px;
+        }
+
+        &:last-child {
+          margin-top: 44px;
+          align-self: flex-start;
+
+          &::after {
+            top: -3px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-tablet {
+    &__img {
+      margin-top: 71px;
+    }
+  }
+
+  @include media-mobile {
+    &__img {
+      margin-top: 47px;
+      width: 260px;
+      height: 269px;
+    }
+  }
+}

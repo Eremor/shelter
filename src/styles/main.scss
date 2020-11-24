@@ -1,0 +1,25 @@
+$page: main;
+
+@import "abstract/variables";
+@import "abstract/mixin";
+
+//Base
+@import "base/base";
+@import "base/buttons";
+@import "base/navigation";
+@import "base/hamburger";
+@import "base/logo";
+@import "base/slider";
+@import "base/card";
+
+//Layouts
+@import "layouts/wrapper";
+@import "layouts/header";
+@import "layouts/footer";
+
+//Components
+@import "components/hero";
+@import "components/about";
+@import "components/our-friends";
+@import "components/help";
+@import "components/addition";

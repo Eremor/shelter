@@ -1,0 +1,41 @@
+.navbar {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  display: flex;
+  width: 443px;
+  justify-content: space-between;
+  list-style: none;
+
+  @include media-mobile {
+    position: absolute;
+  }
+
+  &__link {
+    @include paragraph-l;
+    @if $page == main {
+      color: $color-dark-s;
+    } @else {
+      color: $color-dark-l;
+    }
+    text-decoration: none;
+
+    &_active {
+      padding-bottom: 4px;
+      border-bottom: 3px solid $color-primary;
+      @if $page == main {
+        color: $color-light-s;
+      } @else {
+        color: $color-dark-3xl;
+      }
+    }
+
+    &:hover {
+      @if $page == main {
+        color: $color-light-s;
+      } @else {
+        color: $color-dark-3xl;
+      }
+    }
+  }
+}

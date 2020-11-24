@@ -1,0 +1,15 @@
+:root {
+  font-size: 10px;
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+  @include h3;
+  color: $color-dark-l;
+  text-align: left;
+
+  &_center {
+    text-align: center;
+  }
+}

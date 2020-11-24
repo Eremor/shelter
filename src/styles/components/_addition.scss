@@ -1,0 +1,130 @@
+.addition {
+  background-color: $color-light-l;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 78px;
+    padding-bottom: 101px;
+
+    @include media-tablet {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 100px;
+    }
+
+    @include media-mobile {
+      padding-top: 41px;
+      padding-bottom: 43px;
+    }
+  }
+
+  &__img {
+    max-width: 505px;
+    height: 261px;
+    padding-top: 12px;
+
+    @include media-tablet {
+      order: 1;
+      margin-top: 62px;
+      padding-top: 0;
+    }
+
+    @include media-mobile {
+      margin-top: 40px;
+      width: 260px;
+      height: 135px;
+    }
+  }
+
+  &__content {
+    margin-left: 31px;
+    padding-top: 2px;
+
+    @include media-tablet {
+      margin-left: 0;
+      padding-top: 1px;
+    }
+
+    @include media-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @include media-mobile {
+    &__title {
+      @include h3-mobile;
+      letter-spacing: 0.15rem;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    @include h5;
+    color: $color-dark-l;
+    letter-spacing: 0.09rem;
+
+    @include media-mobile {
+      margin-top: 21px;
+      @include paragraph-l;
+      text-align: center;
+      letter-spacing: 0;
+    }
+  }
+
+  &__donate {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 20px;
+    padding: 10px 15px 10px 60px;
+    max-width: 349px;
+    @include h4;
+    text-decoration: none;
+    letter-spacing: 0.115rem;
+    color: $color-dark-l;
+    border-radius: 9px;
+    background-color: $color-primary;
+
+    @include media-mobile {
+      padding: 13px 15px 13px 60px;
+      max-width: 281px;
+      @include h5;
+      letter-spacing: 0.09rem;
+    }
+
+    &::after {
+      content: url(./../assets/icons/credit-card.svg);
+      position: absolute;
+      top: 10px;
+      left: 14px;
+    }
+
+    &:hover {
+      background-color: $color-primary-light;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    max-width: 380px;
+    @include paragraph-s;
+    line-height: 18px;
+    color: $color-dark-m;
+
+    @include media-mobile {
+      max-width: 280px;
+      text-align: justify;
+      line-height: 19px;
+    }
+  }
+}

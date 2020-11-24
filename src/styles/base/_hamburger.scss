@@ -1,0 +1,42 @@
+.hamburger {
+  display: none;
+  margin: 0;
+  margin-top: 20px;
+  margin-right: 43px;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  & span {
+    margin-bottom: 8px;
+    width: 30px;
+    height: 2px;
+    @if $page == main {
+      background-color: $color-primary;
+    } @else {
+      background-color: #000000;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    & span {
+      @if $page == main {
+        background-color: $color-primary-light;
+      } @else {
+        background-color: $color-dark-l;
+      }
+    }
+  }
+
+  @include media-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}

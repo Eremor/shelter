@@ -1,0 +1,125 @@
+.btn {
+  display: block;
+  padding: 15px 45px;
+  @include btn;
+  color: $color-dark-3xl;
+  text-align: center;
+  border-radius: 100px;
+  outline: none;
+  cursor: pointer;
+
+  &_primary {
+    border: none;
+    background-color: $color-primary;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $color-primary-light;
+    }
+  }
+
+  &_outline {
+    border: 2px solid $color-primary;
+    background-color: transparent;
+
+    &:hover {
+      border-color: $color-primary-light;
+      background-color: $color-primary-light;
+    }
+  }
+
+  &_count {
+    padding: 0px 21px;
+    height: 51px;
+    @include h4;
+    color: $color-dark-3xl;
+  }
+
+  &_active {
+    background-color: $color-primary;
+    border: none;
+  }
+}
+
+.arrow {
+  display: block;
+  @if $page == main {
+    position: absolute;
+    top: 192px;
+    @include btn;
+    padding: 21px 17px;
+  } @else {
+    @include h4;
+  }
+  color: $color-dark-3xl;
+  text-align: center;
+  border-radius: 100px;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid $color-primary;
+  background-color: transparent;
+
+  @include media-mobile {
+    top: 455px;
+  }
+
+  &:hover {
+    border: 2px solid $color-primary-light;
+    background-color: $color-primary-light;
+  }
+
+  &_prev {
+    @if $page == main {
+      left: -105px;
+  
+      @include media-tablet {
+        left: -64px;
+      }
+  
+      @include media-mobile {
+        left: 43px;
+      }
+    } @else {
+      padding: 12px 17px;
+    }
+  }
+
+  &_next {
+    @if $page == main {
+      right: -105px;
+  
+      @include media-tablet {
+        right: -64px;
+      }
+  
+      @include media-mobile {
+        right: 43px;
+      }
+    } @else {
+      padding: 12px 17px;
+    }
+  }
+
+  &_start {
+    padding: 0px 11px 2px 10px;
+  }
+
+  &_end {
+    padding: 0px 11px 2px 10px;
+  }
+
+  &_disabled {
+    cursor: unset;
+    border-color: $color-dark-s;
+    color: $color-dark-s;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $color-dark-s;
+    }
+
+    & object path {
+      fill: $color-dark-s;
+    }
+  }
+}

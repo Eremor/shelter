@@ -1,0 +1,93 @@
+@mixin h2 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 4.4rem;
+  line-height: 130%;
+}
+
+@mixin h3 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.21rem;
+}
+
+@mixin h3-mobile {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 130%;
+  letter-spacing: 0.06rem;
+}
+
+@mixin h4 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.06rem;
+}
+
+@mixin h5 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 110%;
+  letter-spacing: 0.06rem;
+}
+
+@mixin paragraph-l {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 160%;
+}
+
+@mixin paragraph-s {
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+@mixin logo_title {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 3.2rem;
+  line-height: 110%;
+  letter-spacing: 0.19rem;
+}
+
+@mixin logo_subtitle {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: normal;
+  letter-spacing: 0.13rem;
+}
+
+@mixin card-hover {
+  background: #C4C4C4;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+@mixin btn {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 1.7rem;
+  line-height: 130%;
+  letter-spacing: 0.1rem;
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
